@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Bounce1.ma
-//Last modified: Fri, Jan 16, 2026 07:34:52 PM
+//Last modified: Fri, Jan 16, 2026 09:18:34 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.5";
@@ -10,17 +10,17 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "EE858E5F-40B3-F791-B64D-54AD9F42B665";
+fileInfo "UUID" "C1AB35A5-4D67-943A-1AF1-1686B9D04B59";
 createNode transform -s -n "persp";
 	rename -uid "C0BD684C-4552-8980-38E2-3CA8AA6D55D7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.1765526230092664 5.5407990360618964 -20.708623361399187 ;
-	setAttr ".r" -type "double3" -10.538352729600774 -183.39999999998051 0 ;
+	setAttr ".t" -type "double3" 2.3001754672500465 6.0545043665777953 -24.854098303014187 ;
+	setAttr ".r" -type "double3" -9.9383527295963336 -545.39999999994984 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1E021298-4BC2-7AAB-0148-09AA16443951";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 21.232723709887864;
+	setAttr ".coi" 25.476995533635264;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -208,8 +208,8 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 25 -ast 1 -aet 25 ";
 	setAttr ".st" 6;
 select -ne :time1;
-	setAttr ".o" 8;
-	setAttr ".unw" 8;
+	setAttr ".o" 16;
+	setAttr ".unw" 16;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
